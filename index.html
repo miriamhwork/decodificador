@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="logo">
+        <a>
+            <img class="logo_alura" src="./assets/logo_alura.png" alt="Logo da Alura">
+        </a>        
+    </header>
+    <main class="decofidificador">
+        <section class="decodificador_inserir">
+            <p>
+                <textarea id="campoTexto" name="texto" placeholder="Digite seu texto" class="decodificador_inserir_texto"></textarea>
+            </p>
+            <p class="decofidificador_inserir_observacao">
+                <img src="./assets/ponto-exclamacao.png" alt="Ponto de exclamação">
+                Apenas letras minúsculas e sem acento.                
+            </p>
+            <p class="decodificador_botao">
+                <button onclick="criptografarTexto()" class="decodificador_botao_cripto">Criptografar</button>
+                <button onclick="descriptografarTexto()" class="decodificador_botao_descripto">Descriptografar</button>         
+            </p>
+        </section>
+        <section id="resultado" class="decodificador_resultado">
+            <img src="./assets/pessoa_lupa.png" alt="Pessoa com lupa" class="decodificador_resultado_imagem">
+            <p class="decodificador_resultado_nenhuma_mensagem">Nenhuma mensagem encontrada</p>
+            <p class="decodificador_resultado_digite">Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+        </section>       
+    </main>
+    <script src="script.js"></script>
+    <footer class="rodape">
+        <p>Desenvolvido por Miriam Akiko Hirose</p>
+    </footer>
+</body>
+</html>

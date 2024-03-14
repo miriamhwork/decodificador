@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+    font-weight: regular;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #EEF5FF;
+    color: darkblue;
+    padding: 2%;
+}
+
+.logo{
+    padding-top: 2.5rem;
+    width: 100%;
+}
+
+.logo_alura{
+    width: 5rem;
+}
+
+.decofidificador{
+    display: flex;
+    justify-content: space-between; 
+    padding: 1rem;
+    align-items: center;
+    width: 100%;
+    gap: 5rem;
+}
+
+.decodificador_inserir{
+    display: flex;
+    padding-left: 2.5rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.decodificador_inserir_texto{
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    align-items: flex-start;
+    resize: none;
+    width: 100%;
+    height:30rem;
+}
+
+.decodificador_inserir_texto::placeholder {
+    color: darkblue;
+}
+
+.decofidificador_inserir_observacao{
+    align-items: flex-start;
+    font-size: 0.75rem;    
+}
+
+.decodificador_botao{
+    display: flex;
+    gap: 4rem;
+}
+
+.decodificador_botao_cripto{
+    width: 20rem;
+    height: 4rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    background-color: darkblue;
+    color: #EEF5FF;
+}
+
+.decodificador_botao_descripto{
+    width: 20rem;
+    height: 4rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    background-color: #D8DFE8;
+}
+
+.decodificador_resultado{
+    display: flex;
+    width: 40%;
+    height: 36rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.decodificador_resultado_imagem{
+    width: 18rem;
+    height: auto;
+}
+
+.decodificador_resultado_nenhuma_mensagem{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem;
+}
+
+.decodificador_resultado_digite{
+    font-size: 1rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.rodape{
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+    padding-left: 2.5rem;
+}
+
+@media (max-width: 1300px) {
+    .decofidificador{
+        flex-direction: column;
+        padding: 0%;
+        gap: 1rem;
+    }
+    
+    .decodificador_inserir{
+        width: 90%;
+        padding-left: 0%;
+    }
+
+    .decodificador_botao{
+        justify-content: center;        
+    }
+
+    .decodificador_botao_cripto{
+        width: 25%;
+    }
+
+    .decodificador_botao_descripto{
+        width: 25%;
+    }
+
+    .decodificador_resultado{
+        width: 90%;
+        height: 20%;
+    }
+    
+    .decodificador_resultado_imagem{
+        display: none;
+    }
+
+    .rodape{
+        text-align: center;
+        padding-left: 0rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .decodificador_botao{
+        flex-direction: column;
+        align-items: center;
+        gap:2rem;        
+    }
+
+    .decodificador_botao_cripto{
+        width: 80%;
+        padding: 2rem;
+    }
+
+    .decodificador_botao_descripto{
+        width: 80%;
+        padding: 2rem;
+    }
+}
