@@ -97,6 +97,7 @@ body{
 .decodificador_resultado_imagem{
     width: 18rem;
     height: auto;
+    justify-content: center;
 }
 
 .decodificador_resultado_nenhuma_mensagem{
