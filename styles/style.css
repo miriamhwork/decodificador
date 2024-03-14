@@ -7,8 +7,8 @@
 
 body{
     box-sizing: border-box;
-    background-color: #EEF5FF;
-    color: darkblue;
+    background-color: #F3F8FF;
+    color: #49108B;
     padding: 2%;
 }
 
@@ -45,15 +45,17 @@ body{
     resize: none;
     width: 100%;
     height:30rem;
+    color:#49108B;
 }
 
 .decodificador_inserir_texto::placeholder {
-    color: darkblue;
+    color: #49108B;
 }
 
 .decofidificador_inserir_observacao{
     align-items: flex-start;
-    font-size: 0.75rem;    
+    font-size: 0.75rem;  
+    color: #E26EE5;  
 }
 
 .decodificador_botao{
@@ -66,8 +68,8 @@ body{
     height: 4rem;
     text-align: center;
     border-radius: 1.5rem;
-    background-color: darkblue;
-    color: #EEF5FF;
+    background-color: #49108B;
+    color: #F3F8FF;
 }
 
 .decodificador_botao_descripto{
@@ -75,18 +77,21 @@ body{
     height: 4rem;
     text-align: center;
     border-radius: 1.5rem;
-    background-color: #D8DFE8;
+    background-color: #7E30E1;
+    color: #F3F8FF;
 }
 
 .decodificador_resultado{
     display: flex;
     width: 40%;
     height: 36rem;
+    padding: 2%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: white;
     border-radius: 2rem;
+    font-size: 1.5rem;
+    color: #49108B;
 }
 
 .decodificador_resultado_imagem{
